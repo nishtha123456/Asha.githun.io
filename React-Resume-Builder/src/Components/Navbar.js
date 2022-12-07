@@ -11,10 +11,10 @@ export default function Navbar() {
 
       <li float="left"  role="presentation" class="active"><Link to="/Home">Introduction</Link></li>
    
-   <li float="left" role="presentation"><Link to="/ResumeHome"> Resume</Link></li>
+   <li float="left" role="presentation"><Link to="/GetStartResumeBuilder"> Resume</Link></li>
        
    <li float="left" role="presentation"><Link to="/"> Cover Letter</Link></li>  
-   <li float="left" role="presentation"><Link to="/"> Invoice</Link></li>   
+   <li float="left" role="presentation"><Link to="/"> Login</Link></li>   
  </ul>
  </div>
 

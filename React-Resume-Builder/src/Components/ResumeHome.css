@@ -56,7 +56,7 @@ body{
     color: #f5f3ec;
     padding-left: 2rem;
     font-size: 2rem;
-    background: linear-gradient(#b9afdd, rgb(63, 65, 180));
+    background: linear-gradient(#4e0d33, rgb(255, 0, 149));
     width: 9rem;
     height: 2.5rem;
     border-radius: 0.5rem;
@@ -86,7 +86,7 @@ body{
     color: #f5f3ec;
     padding-left: 2rem;
     font-size: 2rem;
-    background: linear-gradient(#b9afdd, rgb(63, 65, 180));
+    background: linear-gradient(#4e0d33, rgb(255, 0, 149));
     width: 12rem;
     height: 2.5rem;
     border-radius: 0.5rem;
@@ -96,8 +96,8 @@ body{
     color: rgb(111, 123, 231);
 }
 .head2:hover{
-    color: #f19306fb;
-    background: linear-gradient(#f1f1ed, rgb(101, 87, 223));
+    color: black;
+    background: linear-gradient(#f1f1ed, rgb(252, 219, 159));
 }
 .section3P1{
     font-size: 1.2rem;

@@ -1,7 +1,28 @@
 import React from "react";
 import './Style1.css'
-import fname from "./NodeResume";
+import { useState,useEffect } from 'react';
+import axios from "axios";
+
 export default function AshaResume() {
+
+    const [customers,setCustomers]=useState([])
+    const [firstname,setFirstname]=useState('')
+    const [lastname,setLastname]=useState('')
+   
+
+    useEffect(()=>{
+        axios({
+          method: "GET",
+          mode:"cors",
+
+          url: "http://localhost:5000/",
+          headers: {
+            "Content-Type": "application/json"
+          }
+        }).then(res=>{console.log("Data fetched:",res.data.customers);setCustomers(res.data.customers);});
+        
+      },[])
+     
         return (
             <>    
             
@@ -13,7 +34,7 @@ export default function AshaResume() {
         <div class="left-side">
 
             <div class="profileText">
-                <h1 style={{'color':'white'}}>ASHA SAVANI </h1> <span> <h2>B.E COMPUTER </h2></span>
+                <h1 style={{'color':'white'}}> ASHA SAVANI </h1> <span> <h2>B.E COMPUTER </h2></span>
             </div>
 
                     
