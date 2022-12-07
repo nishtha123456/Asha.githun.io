@@ -33,16 +33,16 @@ function App() {
       <Route  path="/" element={ <ResumeHome/>}/>
       <Route  path="/ResumeHome" element={ <ResumeHome/>}/>
       
-      <Route exact path="/About" element={ <About/>}/>
+      <Route exact path="/GetStartResumeBuilder" element={ <GetStartResumeBuilder/>}/>
       <Route exact path="/Login" element={ <Login/>}/>
-      <Route exact path="/Invoice" element={ <Invoice/>}/>
-      
-      <Route  path="/Branch" element={ <Branch/>}/>
-      <Route  path="/Home/Branch" element={ <Branch/>}/>
+      <Route exact path="/GetStartResumeBuilder/ResumeTamplates" element={ <ResumeTamplates/>}/>
+    
       <Route  path="/Home/ResumeTemplates" element={ <ResumeTamplates/>}/>
            
       <Route  path="/Home/GetStartResumeBuilder/ResumeTamplates" element={ <ResumeTamplates/>}/>
       <Route  path="/Home/ResumeTemplates/FillInfo" element={ <FillInfo/>}/>
+      <Route exact path="/GetStartResumeBuilder/ResumeTamplates/FillInfo" element={ <FillInfo/>}/>
+      <Route exact path="/GetStartResumeBuilder/ResumeTamplates/FillInfo/AshaResume" element={ <AshaResume/>}/>
       <Route  path="/Home/ResumeTemplates/FillInfo/AshaResume" element={ <AshaResume/>}/>
      <Route path="/Home/ResumeTemplates/Template2" element={<Template2/>} />
       </Routes>
