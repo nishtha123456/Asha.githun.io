@@ -3,7 +3,7 @@
 
  const port = 5000
  const cors = require("cors");
-
+let firstname='';
  let customers=[]  ;
 
  app.use(cors());
@@ -13,13 +13,11 @@ app.use(express.json())
   console.log(`Example app listening on port ${port}`)
 })
 app.post('/',async(req,res)=>{
-  const user={ firstname:req.body.firstname,
-  lastname:req.body.lastname
-}
+   firstname=req.body.firstname
   console.log(req.body)
- customers.push(user);
+ //customers.push(user);
   
-  console.log(customers)
+  console.log(firstname)
   
   
  
@@ -27,7 +25,8 @@ app.post('/',async(req,res)=>{
  
  
  app.get('/', async(req, res) => {
-  res.json({customers})  ;
+  //res.json({customers})  ;
+  res.json({firstname});
  })
 
  //module.exports={firstname1,lastname1};

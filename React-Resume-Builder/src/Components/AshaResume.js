@@ -19,7 +19,7 @@ export default function AshaResume() {
           headers: {
             "Content-Type": "application/json"
           }
-        }).then(res=>{console.log("Data fetched:",res.data.customers);setCustomers(res.data.customers);});
+        }).then(res=>{console.log("Data fetched:",res.data);setFirstname(res.data.firstname);});
         
       },[])
      
@@ -34,7 +34,7 @@ export default function AshaResume() {
         <div class="left-side">
 
             <div class="profileText">
-                <h1 style={{'color':'white'}}> ASHA SAVANI </h1> <span> <h2>B.E COMPUTER </h2></span>
+                <h1 style={{'color':'white'}}>{firstname} ASHA SAVANI </h1> <span> <h2>B.E COMPUTER </h2></span>
             </div>
 
                     
